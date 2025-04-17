@@ -1,0 +1,46 @@
+{
+  "name": "givbux-be",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch src --ext ts --exec \"npx tsc --noEmit && node --no-warnings --loader ts-node/esm src/index.ts\"",
+    "prettify": "prettier --write src/",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.2.0",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "got": "^14.4.5",
+    "helmet": "^8.0.0",
+    "http-status-codes": "^2.3.0",
+    "ip": "^2.0.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.17.0",
+    "xss-clean": "^0.1.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/maxmind": "^2.0.4",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.10.2",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "prisma": "^6.2.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
